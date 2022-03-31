@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
   template: `
       <ul>
         <li (click)="onCityClicked(city)" [ngClass]="{'alert alert-info': city === selection}">
-          {{city}}
+          {{city | titlecase}}
         </li>
       </ul>
   `,

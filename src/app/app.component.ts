@@ -10,6 +10,7 @@ export class AppComponent {
   name!: string;
   cities = ['Barcelona', 'Madrid', 'Lima', 'Quito'];
   selection!: string;
+  criteria = '';
 
   addNewCity(city: string): void {
     this.cities.push(city);
