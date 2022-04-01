@@ -13,7 +13,7 @@ export class ContactReactiveComponent implements OnInit {
 
   ngOnInit(): void {
     this.contactForm = this.initForm();
-    this.onPatchValue();
+    // this.onPatchValue();
     // this.onSetValue();
   }
 
