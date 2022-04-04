@@ -14,6 +14,10 @@ export class NavbarComponent implements OnInit {
   }
 
   goToReactive(): void {
-    this.router.navigate(['contact-reactive', {queryParams: {name: 'Alfre'}}]);
+    this.router.navigate(['contact-reactive'], { queryParams: { name: 'Alfre' } });
+  }
+
+  goToTemplate(): void {
+    this.router.navigate(['contact-template', '580']);
   }
 }
