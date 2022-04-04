@@ -1,3 +1,4 @@
+<!-- <pre>{{departments}}</pre> -->
 <h1>Contact Form {{name}}</h1>
 <h6>(reactive)</h6>
 <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
@@ -24,9 +25,7 @@
         <label for="name" class="form-label">Department</label>
         <select name="department" id="department" class="form-select form-select-sm" formControlName="department">
             <option selected>Open this select menu</option>
-            <option value="marketing">Marketing</option>
-            <option value="sales">Sales</option>
-            <option value="other">Other</option>
+            <option *ngFor="let department of departments" [value]="department">{{department}}</option>
         </select>
     </div>
     <div class="mb-4">
